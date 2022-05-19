@@ -4,28 +4,19 @@ function speed(speed, area) {
     switch (area) {
         case "motorway":
             speedLimit = 130
-            if (speed <= speedLimit) {
-                isSpeeding = false;
-            }
             break;
         case "interstate":
             speedLimit = 90;
-            if (speed <= speedLimit) {
-                isSpeeding = false;
-            }
             break;
         case "city":
             speedLimit = 50;
-            if (speed <= speedLimit) {
-                isSpeeding = false;
-            }
             break;
         case "residential":
             speedLimit = 20;
-            if (speed <= speedLimit) {
-                isSpeeding = false;
-            }
             break;
+    }
+    if (speed <= speedLimit) {
+        isSpeeding = false;
     }
     if(speed<0){
         speed=0;
