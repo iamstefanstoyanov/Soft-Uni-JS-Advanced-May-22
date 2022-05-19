@@ -3,7 +3,7 @@ function speed(speed, area) {
     let isSpeeding = true;
     switch (area) {
         case "motorway":
-            speedLimit = 130
+            speedLimit = 130;
             break;
         case "interstate":
             speedLimit = 90;
